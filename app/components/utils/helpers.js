@@ -1,10 +1,6 @@
 // Node Dependencies
 var axios = require('axios');
 
-
-
-
-
 // NY Times API Request Function
 var articleQuery = function(topic, beginYear, endYear){
 
@@ -84,10 +80,6 @@ var apiSave = function(articleObj){
   
 }
 
-
-
-
-
 // API Post Request Function
 var apiGet = function(){
 
@@ -113,11 +105,6 @@ var apiGet = function(){
   });
   
 }
-
-
-
-
-
 // API Post Request Function
 var apiDelete = function(deleteArticleId){
 
@@ -143,11 +130,6 @@ var apiDelete = function(deleteArticleId){
   });
 
 }
-
-
-
-
-
 // Export all helper functions
 module.exports = {
  articleQuery,

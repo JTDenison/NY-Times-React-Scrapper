@@ -50,7 +50,7 @@ var Search = React.createClass({
   // Here we render the Search Results Panel
   render: function() {
 
-    // http://stackoverflow.com/questions/29810914/react-js-onclick-cant-pass-value-to-method
+    // http://stackoverflow.com/questions/2981
     var that = this;
 
     return (
@@ -64,8 +64,6 @@ var Search = React.createClass({
         <div className="panel-body">
           <ul className="list-group col-md-8 col-md-offset-2">
 
-            {/* ++++++++++++++++++++++++++++++++ ITERATE HERE ++++++++++++++++++++++++++++++++ */}
-            {/* Here we use a map function to loop through an array in JSX */}
             {this.props.apiResults.map(function(search, i) {
 
               // Build array of articles

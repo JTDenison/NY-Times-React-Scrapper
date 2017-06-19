@@ -41,8 +41,7 @@ var Saved = React.createClass({
   // Here we render the Search Results Panel
   render: function() {
 
-    // http://stackoverflow.com/questions/29810914/react-js-onclick-cant-pass-value-to-method
-    // another way could be using the bind() function. but why not try it this way too.
+    // http://stackoverflow.com/questions/2981
     var that = this;
 
     return (
@@ -55,9 +54,6 @@ var Saved = React.createClass({
 
         <div className="panel-body">
           <ul className="list-group col-md-8 col-md-offset-2">
-
-            {/* ++++++++++++++++++++++++++++++++ ITERATE HERE ++++++++++++++++++++++++++++++++ */}
-            {/* Here we use a map function to loop through an array in JSX */}
             {this.props.mongoResults.map(function(search, i) {
 
               return (
